@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using Microsoft.EntityFrameworkCore;
-using ToDoList.DataAccess;
-using ToDoList.Models.Entities;
+using ToDoList.Entities;
 
-namespace ToDoList.Models.EntityFramework
+namespace ToDoList.DataAccess.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext>:IEntityRepository<TEntity>
         where TEntity: class, IEntity, new()

@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
+using ToDoList.Entities;
 
-namespace ToDoList.Models
+namespace ToDoList.DataAccess.EntityFramework
 {
     public class MySQLContext:DbContext
     {
@@ -9,6 +10,6 @@ namespace ToDoList.Models
             optionsBuilder.UseMySQL(@"server=localhost;user=root;password=;database=to_do_list;");
             
         }
-            
+            public DbSet<ToDo> ToDos { get; set; }
     }
 }

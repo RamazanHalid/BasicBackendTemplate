@@ -1,4 +1,4 @@
-namespace ToDoList.Models.BusinessLogic.results
+namespace ToDoList.BusinessLogic.Utilities.results
 {
     public interface IResult
     {

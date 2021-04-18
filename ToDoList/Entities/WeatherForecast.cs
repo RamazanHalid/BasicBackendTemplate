@@ -1,6 +1,6 @@
 using System;
 
-namespace ToDoList
+namespace ToDoList.Entities
 {
     public class WeatherForecast
     {

@@ -1,7 +1,6 @@
-using ToDoList.DataAccess;
-using ToDoList.Models.Entities;
+using ToDoList.Entities;
 
-namespace ToDoList.Models
+namespace ToDoList.DataAccess
 {
     public interface IToDoDal:IEntityRepository<ToDo>
     {

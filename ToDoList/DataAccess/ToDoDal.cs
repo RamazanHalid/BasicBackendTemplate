@@ -1,9 +1,9 @@
-using ToDoList.Models.Entities;
-using ToDoList.Models.EntityFramework;
+using ToDoList.DataAccess.EntityFramework;
+using ToDoList.Entities;
 
-namespace ToDoList.Models
+namespace ToDoList.DataAccess
 {
-    public class ToDoDal:EfEntityRepositoryBase<ToDo, MySQLContext>
+    public class ToDoDal:EfEntityRepositoryBase<ToDo, MySQLContext>,IToDoDal
     {
         
     }

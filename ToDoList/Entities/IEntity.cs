@@ -1,4 +1,4 @@
-namespace ToDoList.Models.Entities
+namespace ToDoList.Entities
 {
     public interface IEntity
     {

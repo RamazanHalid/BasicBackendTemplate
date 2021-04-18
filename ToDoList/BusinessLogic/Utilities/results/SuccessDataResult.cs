@@ -1,4 +1,4 @@
-namespace ToDoList.BusinessLogic.results
+namespace ToDoList.BusinessLogic.Utilities.results
 {
     public class SuccessDataResult<T>:DataResult<T>
     {

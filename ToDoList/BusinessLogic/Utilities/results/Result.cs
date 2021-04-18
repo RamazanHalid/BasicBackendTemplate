@@ -1,4 +1,4 @@
-using ToDoList.Models.BusinessLogic.results;
+using ToDoList.BusinessLogic.Utilities.results;
 
 namespace ToDoList.BusinessLogic.results
 {
