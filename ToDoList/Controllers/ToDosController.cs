@@ -15,7 +15,7 @@ namespace ToDoList.Controllers
         {
             _toDoService = toDoService;
         }
-
+        
         [HttpGet("getall")]
         public IActionResult GetAll()
         {

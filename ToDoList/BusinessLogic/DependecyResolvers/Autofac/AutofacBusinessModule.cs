@@ -3,7 +3,7 @@ using Autofac.Extras.DynamicProxy;
 using Castle.DynamicProxy;
 using ToDoList.BusinessLogic.DependecyResolvers.Interceptors;
 using ToDoList.DataAccess;
-
+using ToDoList.DataAccess.EntityFramework;
 
 
 namespace ToDoList.BusinessLogic.DependecyResolvers.Autofac
@@ -14,6 +14,9 @@ namespace ToDoList.BusinessLogic.DependecyResolvers.Autofac
         {
             builder.RegisterType<ToDoManager>().As<IToDoService>().SingleInstance();
             builder.RegisterType<ToDoDal>().As<IToDoDal>().SingleInstance();
+
+            builder.RegisterType<UserDal>().As<IUserDal>().SingleInstance();
+            builder.RegisterType<UserManager>().As<IUserService>().SingleInstance();
 
             var assembly = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assembly).AsImplementedInterfaces()

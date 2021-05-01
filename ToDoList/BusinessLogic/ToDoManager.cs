@@ -18,7 +18,7 @@ namespace ToDoList.BusinessLogic
 
         public IDataResult<List<ToDo>> GetAll()
         {
-            return new SuccessDataResult< List<ToDo> >(_toDoDal.GetAll(), Messages.ToDoList);
+            return new SuccessDataResult<List<ToDo> >(_toDoDal.GetAll(), Messages.ToDoList);
         }
 
         public IDataResult<ToDo> GetById(int id)
