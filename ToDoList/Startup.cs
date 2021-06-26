@@ -27,6 +27,14 @@ namespace ToDoList
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    
+                    .AllowAnyHeader();
+            }));
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "ToDoList", Version = "v1"});
@@ -42,8 +50,12 @@ namespace ToDoList
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ToDoList v1"));
             }
+            else
+            {
+                app.UseHttpsRedirection();  
+            }
 
-            app.UseHttpsRedirection();
+            app.UseCors("MyPolicy");
 
             app.UseRouting();
 
