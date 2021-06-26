@@ -39,5 +39,9 @@ namespace ToDoList.BusinessLogic
         {
             throw new System.NotImplementedException();
         }
+
+        public User GetByMail(string email)
+        {
+            return _userDal.Get(u => u.Email == email);        }
     }
 }

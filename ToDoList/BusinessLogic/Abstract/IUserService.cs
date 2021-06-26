@@ -11,5 +11,6 @@ namespace ToDoList.BusinessLogic
         IResult Add(User user);
         IResult Delete(User user);
         IResult Update(User user);
+        User GetByMail(string email);
     }
 }
