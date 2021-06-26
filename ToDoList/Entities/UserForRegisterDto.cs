@@ -1,6 +1,6 @@
 namespace ToDoList.Entities
 {
-    public class UserForRegistrationDto:IDto
+    public class UserForRegisterDto:IDto
     {
         public string Email { get; set; }
         public string Password { get; set; }
