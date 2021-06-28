@@ -40,10 +40,10 @@ namespace ToDoList.Controllers
             if (userExists.Success)
             {
                 _authService.Register(userForRegisterDto, userForRegisterDto.Password);
-                return Ok(userForRegisterDto);
+                return Ok(userExists);
             }
 
-            return BadRequest(userExists.Message);
+            return BadRequest(userExists);
   
         }
     }

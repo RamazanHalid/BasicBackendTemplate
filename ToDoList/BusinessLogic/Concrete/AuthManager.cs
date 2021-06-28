@@ -1,10 +1,11 @@
+using ToDoList.BusinessLogic.Abstract;
 using ToDoList.BusinessLogic.Utilities;
 using ToDoList.BusinessLogic.Utilities.results;
 using ToDoList.Entities;
 
-namespace ToDoList.BusinessLogic
+namespace ToDoList.BusinessLogic.Concrete
 {
-    public class AuthManager
+    public class AuthManager:IAuthService
     {
         private IUserService _userService;
 
@@ -51,7 +52,7 @@ namespace ToDoList.BusinessLogic
             {
                 return new ErrorResult(Messages.UserAlreadyExists);
             }
-            return new SuccessResult();
+            return new SuccessResult(Messages.UserRegistrated);
         }
     }
 }
