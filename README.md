@@ -5,9 +5,9 @@ Tools used in this project: <br/>
   -Platform:  <br/> 
   &nbsp; &nbsp; &nbsp &nbsp; &nbsp; Microsoft .NET CORE. <br/> 
   -Database: <br/>
-  &nbsp; &nbsp; &nbsp &nbsp; &nbsp; MySQL. <br/>  
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MySQL. <br/>  
   -API: <br/>
-    &nbsp; &nbsp; &nbsp &nbsp; &nbsp; RESTful API. <br/>
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; RESTful API. <br/>
   -Frameworks: <br/>
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Entity Framework, Autofac.  <br/>
     -Architecture, Principles, Patterns and others: <br/>
