@@ -3,7 +3,7 @@ Tools used in this project: <br/>
   -Language: <br/> 
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#.  <br/> 
   -Platform:  <br/> 
-  &nbsp; &nbsp; &nbsp &nbsp; &nbsp; Microsoft .NET CORE. <br/> 
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Microsoft .NET CORE. <br/> 
   -Database: <br/>
   &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; MySQL. <br/>  
   -API: <br/>
