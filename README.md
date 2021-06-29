@@ -1,5 +1,8 @@
 
-Hi, I am Ramazan Halid. I prepare a basic back-end service for todo app. For now, I has developed this back-end for intern project of b-infogis company.
+Hi, I am Ramazan Halid. I prepare a basic back-end service for todo app. For now, I has developed this back-end for intern project of b-infogis company. <br/>
+
+<b>The MySQL database is 'to_do_list.sql'. You can import this database for testing. <b/> <br/>
+
 Tools used in this project: <br/> 
   -Language: <br/> 
    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; C#.  <br/> 
